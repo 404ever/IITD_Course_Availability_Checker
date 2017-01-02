@@ -1,0 +1,191 @@
+<!--Om Shree Ganeshay Namah!
+Developed by : Dinesh, JEE Office, IIT Delhi
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Academics@IIT Delhi</title>
+<style type="text/css">
+@import url("css/style.css");
+</style>
+
+<script type="text/javascript">
+document.onkeydown = function() {
+    if(event.keyCode == 116) {
+            event.returnValue = false;
+            event.keyCode = 0;
+            return false;
+           }
+}
+
+function showmenu(elmnt){
+document.getElementById(elmnt).style.visibility="visible";
+}
+	
+function hidemenu(elmnt){
+document.getElementById(elmnt).style.visibility="hidden";
+}
+
+
+function noBack() 
+{
+if(window.history.forward(1) != null)
+ {
+  window.history.forward(1);
+  }
+ }
+
+function printpage()
+{
+  window.print()
+}
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84648187-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body onload="noBack();" onpageshow="if(event.persisted)noBack();" onunload=""">
+<div class="maincontainer">
+<table width=100% height="100" border="0">
+    <tr>
+    <td width="100%" height="50px" align="center" valign="center" bgcolor="#7BC8FE"  >
+		<table border="0" width=100%>
+		<tr>
+		<td>
+		<center>
+		<span class="h4"><strong>INDIAN INSTITUTE OF TECHNOLOGY DELHI<br>
+		Academic Management Portal</strong></span>
+
+		</center> 
+		</td>
+		</tr>
+		</table>
+    </td>
+    </tr>
+<!--	<tr>
+    <td bgcolor="#51ADFF">
+    <div class="menubar">
+/*    	<table class="dropnav" border="0" cellspacing="2">
+            <tr bgcolor="#EEEEEE">				
+		    <td width="200"><div class="dropnav"><a href="http://www.iitd.ac.in" target="_blank">IIT Delhi</a><br />
+		      </div></td>
+            <td width="200"><div class="dropnav"><a href="http://gate.iitd.ac.in" target="_blank">GATE - 2016</a><br />
+            </div></td>
+            <td width="200"><div class="dropnav"><a href="http://jee.iitd.ac.in" target="_blank">JEE(Advanced) - 2016<br />
+            </a></div></td>
+
+            </tr>
+        </table>*
+           
+    </div>
+    </td>
+    </tr>/-->
+    <tr>
+    <td>
+    <table width="100%" height="100%" border="1" bgcolor="#F1FDFF">
+    <tr>
+	<td valign="top"><font color = "red">Session Expired</font>
+<center>
+<table border="0" cellpadding=5 cellspacing=0 >
+
+<tr>
+<td align="left" bgcolor="#7BC8FE" width=600px style="font-size: 14px;">
+<br> 
+<b>
+<center>
+<font size="3pt" color=>
+<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
+Important Instructions
+</div>	
+</font>
+</center>
+</b><br>
+<b><u><font color="#8B0D0D">Login Details</font></u></b>
+	<ul>
+	<li class="style3">
+	  <div align="justify" class="style4">Your Kerberos User ID and Password are required for login.</div>
+<br>
+<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
+For faculty (Semester Schedule):<br> 
+http://roombooking.iitd.ac.in/user/view_schedule_faculty <br>
+<br>
+For students (Semester Schedule): <br>
+http://roombooking.iitd.ac.in/user/view_schedule <br>
+<br>
+For faulty and UG Students (Non Graded Units): <br>
+https://ngu.iitd.ac.in<br>
+</div>
+	</li>
+	</ul>
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<!--<b><u><font color="#8B0D0D">For any help related to Portal</font></u></b><br>
+<ul type="a">
+<li class="style4">Contact Mr. XXXXXX at XXXX.</li>
+</ul>
+
+<b><u><font color="#8B0D0D">Beautification can be done later on.</font></u></b><br>
+<br />
+<br />
+</p>-->
+</td>
+<td valign="top"  bgcolor="#7BC8FE" width=15px><br></td>
+<td valign="top"  bgcolor="#7BC8FE">
+
+<center>
+<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
+<strong>Sign In</strong><br /><br />
+
+</center>
+<div align="center">
+<form action = "index.php?page=tryLogin"  method="post" autocomplete="off">
+<table border=1 cellspacing=0 cellpadding=4 bordercolor=#88B7EA width=330px id="tblisagree">
+	<tr align='left'>
+	<td valign='top' width=100 ><strong><font color= "#8B0D0D">User Name : </font></strong><br></td>
+	<td valign='top'><input name='username' type='text'  class='lgText'/ autofocus></td>
+	</tr>
+	<tr align='left'>
+	<td valign='top'><strong><font color= "#8B0D0D">Password :</font></strong> </td>
+	<td valign='top'><input name='password' type='password' class='lgText' /></td>
+	</tr>
+	<tr><td valign='top'></td><td valign='top'><input name='submit-button' type='submit' value = 'Log In' /></td></tr>	
+</table>
+</form>
+</div>	
+</div>
+</td>
+<td valign="top"  bgcolor="#7BC8FE" width=15px></td>
+</tr>
+</table>
+</center>
+
+ 
+ 
+	</td></tr></table>
+    </td>
+    </tr>
+
+
+
+   
+    <tr>
+	<td class="footer">
+	<span class='H22'>Your IP Address is: 10.10.78.22<br>Site Developed &amp; Maintained by : IIT Delhi</span></td></tr>
+	</table>
+</div>
+</body>
+</html>

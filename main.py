@@ -33,6 +33,7 @@ def play_music(music_file, volume=0.8):                               # this is 
         clock.tick(30)                                                          # check if playback has finished
 
 def main_function(sc):                                                          # our main function
+    print("Our Bot/Script is running")
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
         url = 'https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=351e0cd3dcbdfa6cd4e21e4776e4986c75fc47ae&uname=2013CH10083'    # Warning   ::::::::
         # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! you need to change this url, to get your unique url see instruction in readme file, feel free to contact/comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -59,7 +60,6 @@ def main_function(sc):                                                          
                     max_rows = number_of_rows
             student_registered = 0
             student_registered = max_rows-1
-            print(student_registered)
                                                                                     # pick a MP3 music file you have in the working folder
             music_file = "GOT.mp3"                                                  # otherwise give the full file path
             # optional volume 0 to 1.0

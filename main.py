@@ -1,3 +1,5 @@
+# To run python script type command- python file_name.py (in this case python main.py) don't forget to give the right location of your file
+
 from bs4 import BeautifulSoup           # not a part of the python lib need to install explicitely  (check your respective OS instructoion to install BeautifulSoup)
 import requests                         # not a part of the python lib need to install explicitely  (check your respective OS instructoion to install requests)
 import pygame as pg                     # not a part of the python lib need to install explicitely  (check your respective OS instructoion to install pygame)

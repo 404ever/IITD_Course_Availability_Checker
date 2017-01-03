@@ -17,6 +17,8 @@ hul_dictionary = {}
 
 with open('initialize.txt','r') as init:
     for line in init:
+        if not line.rstrip():
+            continue
         if(i == 0):
             total_course = line
             print("Total Course Provided: " + total_course)

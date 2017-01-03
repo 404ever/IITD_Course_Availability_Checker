@@ -35,7 +35,7 @@ Mandatory Changes: to check your course avaliability you just need to do Two cha
 
 OPTIONAL changes:
 
-(1) to change the timer loop just edit line number 76 and 78, default value is 300 sec or say 5 min
+(1) to change the timer loop just edit line number 76 and 78, default value is 60 sec
 
 (2) to change music file (must be mp3) put the music file in same folder as three other file and edit 
     the line 64 of given main.py file

@@ -8,7 +8,7 @@ import warnings                         # part of the python lib no need to inst
 import sched                            # part of the python lib no need to install explicitely
 import time                             # part of the python lib no need to install explicitely
 
-hul_dictionary = {'HUL211': '156'}    # here add as many courses as you want to check their avaliability, they can be any course either DE, OC or HUL etc, 
+hul_dictionary = {'HUL211': '156', 'HUL231': '78', 'HUL307': '32'}    # here add as many courses as you want to check their avaliability, they can be any course either DE, OC or HUL etc, 
                                                                       # just put course name as key and maximum allowed course limit as value for that key
 s = sched.scheduler(time.time, time.sleep)                            # this is the object for system scheduler
 
@@ -38,7 +38,7 @@ def play_music(music_file, volume=0.8):                               # this is 
 def main_function(sc):                                                          # our main function
     print("Our Bot/Script is running")
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
-        url = 'https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=7f108a2072d814c43c7f3c5adb07eafb040b9158&uname=2013CH10083'    # Warning   ::::::::
+        url = 'https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=9b897766aa867a589819aeee825883b00e10b31c&uname=2013CH10083'    # Warning   ::::::::
         # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! you need to change this url, to get your unique url see instruction in readme file, feel free to contact/comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         payload = {'EntryNumber': course}                                       # passing the post parameter to server
 
@@ -62,7 +62,7 @@ def main_function(sc):                                                          
                 if number_of_rows > max_rows:
                     max_rows = number_of_rows
             student_registered = 0
-            student_registered = max_rows-3
+            student_registered = max_rows-1
                                                                                     # pick a MP3 music file you have in the working folder
             music_file = "GOT.mp3"                                                  # otherwise give the full file path
             # optional volume 0 to 1.0

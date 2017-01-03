@@ -64,9 +64,9 @@ Common step to all OS to work behind proxy:  		set the environment variables for
 Windows: 			run in command window (open as admin access)
 
 
-set http_proxy=http://username:password@10.10.78.22:3128 					// let's say in my case username- ch1130083, password- seriously and 
+set http_proxy=http://username:password@10.10.78.22:3128
 
-set https_proxy=https://username:password@10.10.78.22:3128				    //don't forget to change this number 22, 22(Btech), 62(MTech and dual) and 61(Phd)
+set https_proxy=https://username:password@10.10.78.22:3128
 
 
 Linux/OS X: run in terminal

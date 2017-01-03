@@ -80,42 +80,63 @@ You need to restart your PC after these 2 commands
 ----------------------------------------------------------------------
 
 For windows:
+
+
 (1) Python 2.* install: 
+
 http://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8 ( answer given by wclear)
 
 (2) pip install:
+
 http://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows
+
 https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation
 
 (3) requests install:
+
 http://docs.python-requests.org/en/master/user/install/
+
 https://pypi.python.org/pypi/requests/
 
 (4) BeautifulSoup install:
+
 https://www.quora.com/What-is-the-step-by-step-procedure-to-install-Beautiful-Soup-In-Windows
 
 (5) pygame install:
+
 https://www.webucator.com/blog/2015/03/installing-the-windows-64-bit-version-of-pygame/
+
 http://www.pygame.org/download.shtml
+
 https://inventwithpython.com/pygame/chapter1.html
 
 ----------------------------------------------------------------------
 For Linux and OSX:
+
 (1) Python 2.* install: 
+
 https://www.cyberciti.biz/faq/install-python-linux/ (linux)
+
 http://docs.python-guide.org/en/latest/starting/install/osx/ (OSX)
 
 (2) pip install:
+
 http://ask.xmodulo.com/install-pip-linux.html (Linux)
+
 pip will automatically get installed when you install python using brew (tested, OSX)
 
 (3) requests install:
+
 http://stackoverflow.com/questions/30362600/how-to-install-requests-module-in-python-3-4-instead-of-2-7  (Linux)
+
 pip install requests (tested, OSX)
 
 (4) BeautifulSoup install:
+
 http://stackoverflow.com/questions/19957194/install-beautiful-soup-using-pip (Linux)
+
 pip install bs4 (tested, OSX)
 
 (5) pygame install:
+
 https://inventwithpython.com/pygame/chapter1.html

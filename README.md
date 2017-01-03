@@ -7,7 +7,9 @@ To run python script type command- "python file_name.py", don't forget to give t
 Mandatory Changes: to check your course avaliability you just need to do Two changes in attached main.py file
 
 (1) Change 1: 
+			  
 			  in line number 9 of main.py file just add your course code and maximum allowed limit for that course 
+              
               example: let's say you want to check course CLL786 and maximum allowed limit for this course is 55 so our line 9 would be hul_dictionary = {'CLL786': '55'} in this case to add more courses use comma for sepration
 
 (2) Change 2:  
@@ -45,8 +47,15 @@ AND LAST BUT NOT LEAST EVERY TIME YOU LOGIN OR LOGOUT, YOU HAVE TO UPDATE YOUR U
 ----------------------------------------------------------------------
 
 Requirment:
- to run the script successfully you need to install 4 things python 2, BeautifulSoup, requests and pygame to see the instruction for your specific Operating System Goto these  link (given below), if you get stuck in something then just contact or may be you can do a quick google search for that particular error 
- (I have not tested these links they may work or may not work, if you stuck while installing these package just google that issue you will definetly get your answers if not then contact me)
+
+
+ to run the script successfully you need to install 4 things python 2, BeautifulSoup, requests and pygame 
+ to see the instruction for your specific Operating System Goto these  link (given below), if you get stuck in 
+ something then just contact or may be you can do a quick google search for that particular error 
+ 
+ (I have not tested these links they may work or may not work, if you stuck while installing these package just 
+ google that issue you will definetly get your answers if not then contact me)
+
 
 ----------------------------------------------------------------------
 

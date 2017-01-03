@@ -8,10 +8,10 @@ Mandatory Changes: to check your course avaliability you just need to do Two cha
 
 (1) Change 1: 
 			  
-			  in line number 9 of main.py file just add your course code and maximum allowed limit for that course 
+			  in line number 11 of main.py file just add your course code and maximum allowed limit for that course 
               
               example: let's say you want to check course CLL786 and maximum allowed limit for this course is 55 
-              so our line 9 would be hul_dictionary = {'CLL786': '55'} in this case to add more courses use comma for sepration
+              so our line 11 would be hul_dictionary = {'CLL786': '55'} in this case to add more courses use comma for sepration
 
 (2) Change 2:  
 			   
@@ -29,13 +29,13 @@ Mandatory Changes: to check your course avaliability you just need to do Two cha
                          of registered students to display
                
                step 6 -> Last Step, now just copy the url of this page (page with list showing) 
-                         this will be your unique url, put this url in line number 37 of given main.py file
+                         this will be your unique url, put this url in line number 41 of given main.py file
 
 
 
 OPTIONAL changes:
 
-(1) to change the timer loop just edit line number 73 and 75, default value is 300 sec or say 5 min
+(1) to change the timer loop just edit line number 76 and 78, default value is 300 sec or say 5 min
 
 (2) to change music file (must be mp3) put the music file in same folder as three other file and edit 
     the line 64 of given main.py file
@@ -45,7 +45,7 @@ OPTIONAL changes:
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Caution !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 AND LAST BUT NOT LEAST EVERY TIME YOU LOGIN OR LOGOUT, YOU HAVE TO UPDATE YOUR URL AS MENTION ABOVE IN MANDATORY CHANGE 2 AT LINE 
-NUMBER 37 IN MAIN.PY FILE OTHERWISE YOU WILL GET SERVER ERROR SO MUST UPDATE YOUR URL AS DESCIBRD ABOVE
+NUMBER 41 IN MAIN.PY FILE OTHERWISE YOU WILL GET SERVER ERROR SO MUST UPDATE YOUR URL AS DESCIBRD ABOVE
 
 ----------------------------------------------------------------------
 
@@ -71,7 +71,7 @@ set http_proxy=http://username:password@10.10.78.22:3128
 set https_proxy=https://username:password@10.10.78.22:3128
 
 
-Linux/OS X: run in terminal
+Linux/OS X: 				run in terminal
 
 export http_proxy=http://username:password@10.10.78.22:3128
 

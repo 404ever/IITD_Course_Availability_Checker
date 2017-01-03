@@ -16,19 +16,24 @@ Mandatory Changes: to check your course avaliability you just need to do Two cha
 
                step 2 -> Then go to https://academics1.iitd.ac.in and login with your id and password
                
-               step 3 -> After login successfull click on last option "List of Registered Students in a Course IInd semester 2016-2017"
+               step 3 -> After login successfull click on last option "List of Registered Students 
+                         in a Course IInd semester 2016-2017"
                
-               step 4 -> Now you will see a edit-box with label "Enter Course Code" and a button with label "Submit", so far everything is good
+               step 4 -> Now you will see a edit-box with label "Enter Course Code" and a button 
+                         with label "Submit", so far everything is good
                
-               step 5 -> Now for a course "HUL211" and click Submit button and wait for the list of registered students to display
+               step 5 -> Now for a course "HUL211" and click Submit button and wait for the list 
+                         of registered students to display
                
-               step 6 -> Last Step, now just copy the url of this page (page with list showing) this will be your unique url, put this url in line number 37 of given main.py file
+               step 6 -> Last Step, now just copy the url of this page (page with list showing) 
+                         this will be your unique url, put this url in line number 37 of given main.py file
 
 
 
 OPTIONAL changes:
 
-(1) to change the timer loop just edit line number 73 and 75, default value is 300 sec aka 5 min
+(1) to change the timer loop just edit line number 73 and 75, default value is 300 sec or say 5 min
+
 (2) to change music file (must be mp3) put the music file in same folder as three other file and edit the line 64 of given main.py file
 
 

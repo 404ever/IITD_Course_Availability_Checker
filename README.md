@@ -4,16 +4,23 @@
 
 To run python script type command- "python file_name.py", don't forget to give the right location of your file
 
-Mandatory Changes: to check your course avaliability you just need to do 2/Two changes in attached main.py file
+Mandatory Changes: to check your course avaliability you just need to do Two changes in attached main.py file
 
-(1) Change 1: in line number 9 of main.py file just add your course code and maximum allowed limit for that course 
+(1) Change 1: 
+			  in line number 9 of main.py file just add your course code and maximum allowed limit for that course 
               example: let's say you want to check course CLL786 and maximum allowed limit for this course is 55 so our line 9 would be hul_dictionary = {'CLL786': '55'} in this case to add more courses use comma for sepration
 
-(2) Change 2:  step 1 -> This is going to be tricky, first logout from your academica1.iitd account
+(2) Change 2:  
+			   step 1 -> This is going to be tricky, first logout from your academica1.iitd account
+
                step 2 -> Then go to https://academics1.iitd.ac.in and login with your id and password
+               
                step 3 -> After login successfull click on last option "List of Registered Students in a Course IInd semester 2016-2017"
+               
                step 4 -> Now you will see a edit-box with label "Enter Course Code" and a button with label "Submit", so far everything is good
+               
                step 5 -> Now for a course "HUL211" and click Submit button and wait for the list of registered students to display
+               
                step 6 -> Last Step, now just copy the url of this page (page with list showing) this will be your unique url, put this url in line number 37 of given main.py file
 
 

@@ -11,6 +11,7 @@ Mandatory Changes: to check your course avaliability you just need to do Two cha
               example: let's say you want to check course CLL786 and maximum allowed limit for this course is 55 so our line 9 would be hul_dictionary = {'CLL786': '55'} in this case to add more courses use comma for sepration
 
 (2) Change 2:  
+			   
 			   step 1 -> This is going to be tricky, first logout from your academica1.iitd account
 
                step 2 -> Then go to https://academics1.iitd.ac.in and login with your id and password

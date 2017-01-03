@@ -61,13 +61,12 @@ How to get your unique_url :
                          of registered students to display
                
                step 6 -> Last Step, now just copy the url of this page (page with list showing) 
-                         this will be your unique url, put this url in line number 41 of given main.py file
+                         this will be your unique url
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Caution !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-AND LAST BUT NOT LEAST EVERY TIME YOU LOGIN OR LOGOUT, YOU HAVE TO UPDATE YOUR URL AS MENTION ABOVE IN MANDATORY CHANGE 2 AT LINE 
-NUMBER 41 IN MAIN.PY FILE OTHERWISE YOU WILL GET SERVER ERROR SO MUST UPDATE YOUR URL AS DESCIBRD ABOVE
+AND LAST BUT NOT LEAST EVERY TIME YOU LOGIN OR LOGOUT, YOU HAVE TO UPDATE YOUR URL AS MENTION ABOVE IN YOUR INITIALIZE.TXT FILE OTHERWISE YOU WILL GET SERVER ERROR SO MUST UPDATE YOUR URL AS DESCIBRD ABOVE
 
 ----------------------------------------------------------------------
 

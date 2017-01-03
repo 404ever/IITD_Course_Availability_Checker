@@ -6,32 +6,48 @@ To run python script type command- "python file_name.py", don't forget to give t
 
 Mandatory Changes:    to check your course avaliability you just need to edit initialize.txt file only
 
-Input Format:   in intialize.txt file provide the input in given (below) format only >>>
+Input Format:   in intialize.txt file provide the input in given (below) format only
+
 total_number_of_courses_to_check
 course_code max_allowed_course_limit (caution: don't forget the whitespace)
+
 .
+
 .
+
 .
+
 .
+
 list out all courses
+
 .
+
 .
+
 .
+
 your_unique_url
+
 time_intervel (in sec)
 
 example:
 
 3
+
 HUL211 156
+
 HUL231 78
+
 HUL307 32
+
 https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=9b897766aa867a589819aeee825883b00e10b31c&uname=2013CH10083
+
 60
 
 How to get your unique_url :  
-                  
-                        step 1 -> This is going to be tricky, first logout from your academica1.iitd account
+			   
+			         step 1 -> This is going to be tricky, first logout from your academica1.iitd account
 
                step 2 -> Then go to https://academics1.iitd.ac.in and login with your id and password
                
@@ -68,16 +84,16 @@ Requirment:
 
 ----------------------------------------------------------------------
 
-Common step to all OS to work behind proxy:            set the environment variables for http_proxy and https_proxy
+Common step to all OS to work behind proxy:  		set the environment variables for http_proxy and https_proxy
 
-Windows:            run in command window (open as admin access)
+Windows: 			run in command window (open as admin access)
 
 set http_proxy=http://username:password@10.10.78.22:3128
 
 set https_proxy=https://username:password@10.10.78.22:3128
 
 
-Linux/OS X:                   run in terminal
+Linux/OS X: 				run in terminal
 
 export http_proxy=http://username:password@10.10.78.22:3128
 

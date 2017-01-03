@@ -8,9 +8,8 @@ Mandatory Changes:    to check your course avaliability you just need to edit in
 
 Input Format:   in intialize.txt file provide the input in given (below) format only
 
-total_number_of_courses_to_check
-
-course_code max_allowed_course_limit (caution: don't forget the whitespace)
+total_number_of_courses_to_check <br />
+course_code max_allowed_course_limit (caution: don't forget the whitespace) <br />
 
 .
 

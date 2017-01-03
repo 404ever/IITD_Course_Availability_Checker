@@ -8,8 +8,35 @@ import warnings                         # part of the python lib no need to inst
 import sched                            # part of the python lib no need to install explicitely
 import time                             # part of the python lib no need to install explicitely
 
-hul_dictionary = {'HUL211': '156', 'HUL231': '78', 'HUL307': '32'}    # here add as many courses as you want to check their avaliability, they can be any course either DE, OC or HUL etc, 
-                                                                      # just put course name as key and maximum allowed course limit as value for that key
+# Opening and reading the initialize.txt in buffer mode
+total_course = 0
+i =0
+url = None;
+time_intervel = None;
+hul_dictionary = {}
+
+with open('initialize.txt','r') as init:
+    for line in init:
+        if(i == 0):
+            total_course = line
+            print("Total Course Provided: " + total_course)
+        if(i == int(total_course) + 1):
+            url = line
+        if(i == int(total_course) + 2):
+            time_intervel = line
+        if(i >0 and i<= int(total_course)):
+            key = None
+            value = None
+            tmp_counter = 0
+            for word in line.split():
+                if(tmp_counter == 0):
+                    key = word
+                if(tmp_counter != 0):
+                    value = word
+                tmp_counter = tmp_counter +1
+            hul_dictionary[key] = value
+        i = i+1
+
 s = sched.scheduler(time.time, time.sleep)                            # this is the object for system scheduler
 
 def play_music(music_file, volume=0.8):                               # this is our play music function, it will take file as a input
@@ -38,8 +65,6 @@ def play_music(music_file, volume=0.8):                               # this is 
 def main_function(sc):                                                          # our main function
     print("Our Bot/Script is running")
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
-        url = 'https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=9b897766aa867a589819aeee825883b00e10b31c&uname=2013CH10083'    # Warning   ::::::::
-        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! you need to change this url, to get your unique url see instruction in readme file, feel free to contact/comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         payload = {'EntryNumber': course}                                       # passing the post parameter to server
 
         with warnings.catch_warnings():                                         # here I'm suppressing unwanted warnings to avoid unwanted confusion
@@ -73,8 +98,8 @@ def main_function(sc):                                                          
                 play_music(music_file, volume)
         else:
             print("Oh Shit!!! Something wrong with your url or network connection")
-    s.enter(60, 1, main_function (sc))                                            # here I added timer as 60 sec, so this script 
+    s.enter(time_intervel, 1, main_function (sc))                                 # here I added timer as 60 sec, so this script 
                                                                                   # runs in every 60 sec intervel to check updates in IIT database for course avaliability
-s.enter(60, 1, main_function (s))                                                 # and will start playing GOT ringtone as a notification
+s.enter(time_intervel, 1, main_function (s))                                      # and will start playing GOT ringtone as a notification
 s.run()
 

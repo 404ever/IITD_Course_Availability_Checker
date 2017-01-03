@@ -1,15 +1,7 @@
-12
+4
 HUL253 78
-HUL307 32
 HUL211 156
-hul212 78
 HUL231 78
-hul234 78
-hul236 156
 hul242 156
-hul256 78
-hul258 78
-hul261 78
-hul265 78
-https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=bebf1bd5f1bb2355b8484bf3c184d57a8c1690b3&uname=2013CH10083
+https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=da2ccfe6086ef838d135e1f72d49f3257a4e6944&uname=2013CH10083
 60

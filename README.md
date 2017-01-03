@@ -1,7 +1,9 @@
 :::::::::: Warning :::::::::: Read the instruction carefully
 
 (Use sublime editor to open all files except GOT.mp3)
+
 To run python script type command- "python file_name.py", don't forget to give the right location of your file
+
 Mandatory Changes: to check your course avaliability you just need to do 2/Two changes in attached main.py file
 
 (1) Change 1: in line number 9 of main.py file just add your course code and maximum allowed limit for that course 

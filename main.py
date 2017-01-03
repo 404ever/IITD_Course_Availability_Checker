@@ -72,9 +72,9 @@ def main_function(sc):                                                          
                 play_music(music_file, volume)
         else:
             print("Oh Shit!!! Something wrong with your url or network connection")
-    s.enter(60, 1, main_function, (sc,))                                            # here I added timer as 60 sec, so this script 
-                                                                                    # runs in every 60 sec intervel to check updates in IIT database for course avaliability
-s.enter(60, 1, main_function, (s,))                                                 # and will start playing GOT ringtone as a notification
+    s.enter(300, 1, main_function, (sc,))                                            # here I added timer as 300 sec, so this script 
+                                                                                    # runs in every 300 sec intervel to check updates in IIT database for course avaliability
+s.enter(300, 1, main_function, (s,))                                                 # and will start playing GOT ringtone as a notification
 s.run()
 
 

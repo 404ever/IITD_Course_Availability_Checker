@@ -9,25 +9,41 @@ Mandatory Changes:    to check your course avaliability you just need to edit in
 Input Format:   in intialize.txt file provide the input in given (below) format only
 
 total_number_of_courses_to_check
+
 course_code max_allowed_course_limit (caution: don't forget the whitespace)
+
 .
+
 .
+
 .
+
 .
+
 list out all courses
+
 .
+
 .
+
 .
+
 your_unique_url
+
 time_intervel (in sec)
 
 example:
 
 3
+
 HUL211 156
+
 HUL231 78
+
 HUL307 32
+
 https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=9b897766aa867a589819aeee825883b00e10b31c&uname=2013CH10083
+
 60
 
 How to get your unique_url :  

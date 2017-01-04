@@ -70,38 +70,55 @@ def main_function(sc):                                                          
     print("Our Bot/Script is running")
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
         payload = {'EntryNumber': course}                                       # passing the post parameter to server
+        try:
+            with warnings.catch_warnings():                                         # here I'm suppressing unwanted warnings to avoid unwanted confusion
+                warnings.simplefilter("ignore")
+                r = requests.post(url, data=payload, verify=False)                  # POST with form-encoded data
+                
+            if(r.status_code == 200):
+                # Open a file in write mode
+                fo = open("tmp_response_file.txt", "w")
+                str = r.text
+                fo.write(str)
+                # Close opend file
+                fo.close()
 
-        with warnings.catch_warnings():                                         # here I'm suppressing unwanted warnings to avoid unwanted confusion
-            warnings.simplefilter("ignore")
-            r = requests.post(url, data=payload, verify=False)                  # POST with form-encoded data
-            
-        if(r.status_code == 200):
-            # Open a file in write mode
-            fo = open("tmp_response_file.txt", "w")
-            str = r.text
-            fo.write(str)
-            # Close opend file
-            fo.close()
+                text = open("tmp_response_file.txt")
+                soup = BeautifulSoup(text.read().lower(), "html.parser")
+                max_rows = 0
+                for table in soup.findAll('table'):
+                    number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
+                    if number_of_rows > max_rows:
+                        max_rows = number_of_rows
+                student_registered = 0
+                student_registered = max_rows-1
+                                                                                        # pick a MP3 music file you have in the working folder
+                music_file = "GOT.mp3"                                                  # otherwise give the full file path
+                # optional volume 0 to 1.0
+                volume = 0.8
+                limit = int(hul_dictionary[course])
+                if(student_registered < limit):
+                    print('############# ', course, 'is avaliable to add, Hurry Up') 
+                    play_music(music_file, volume)
+            else:
+                print("Oh Shit!!! Something wrong with your Unique URL or network connection")
+        except requests.exceptions.Timeout:
+            print("There is a Time out exceptions so you need to re-run your script")
+            sys.exit(1)
+            # Maybe set up for a retry, or continue in a retry loop
+        except requests.exceptions.TooManyRedirects:
+            print("There is a TooManyRedirects exception so you need to re-run your script")
+            sys.exit(1)
+            # URL is bad you should try a different one
+        except requests.exceptions.RequestException:
+            print("There is a RequestException exception so you need to re-run your script")
+            print("This is due to our IITD proxy server, the server can handle that much request only for an user for a single socket")
+            print("So to make a new conncetion/socket you need to re-run the script, Sorry...IITD Server Sucks")
+            sys.exit(1)
+        except requests.exceptions.HTTPError:
+            print("There is a HTTPError exception so you need to re-run your script")
+            sys.exit(1)
 
-            text = open("tmp_response_file.txt")
-            soup = BeautifulSoup(text.read().lower(), "html.parser")
-            max_rows = 0
-            for table in soup.findAll('table'):
-                number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
-                if number_of_rows > max_rows:
-                    max_rows = number_of_rows
-            student_registered = 0
-            student_registered = max_rows-1
-                                                                                    # pick a MP3 music file you have in the working folder
-            music_file = "GOT.mp3"                                                  # otherwise give the full file path
-            # optional volume 0 to 1.0
-            volume = 0.8
-            limit = int(hul_dictionary[course])
-            if(student_registered < limit):
-                print('############# ', course, 'is avaliable to add, Hurry Up') 
-                play_music(music_file, volume)
-        else:
-            print("Oh Shit!!! Something wrong with your url or network connection")
     s.enter(time_intervel, 1, main_function (sc))                                 # here I added timer in sec, so this script 
                                                                                   # runs in specified time intervel to check updates in IIT database for course avaliability
 s.enter(time_intervel, 1, main_function (s))                                      # and will start playing GOT ringtone as a notification if a course is avilable to add

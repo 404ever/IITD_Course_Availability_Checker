@@ -99,9 +99,12 @@ def main_function():                                                          # 
                 # optional volume 0 to 1.0
                 volume = 0.8
                 limit = int(hul_dictionary[course])
-                if(student_registered < limit):
+                if(student_registered < limit and student_registered > 5):
                     print('#############@@@@@@@@@@@@@@@:   ', course, 'is avaliable to add, Hurry Up') 
                     play_music(music_file, volume)
+                else:
+                    print("You need to update your token, token has expired")
+                    sys.exit(1) 
             else:
                 print("Oh Shit!!! Something wrong with your Unique URL or network connection")
         except requests.exceptions.Timeout:

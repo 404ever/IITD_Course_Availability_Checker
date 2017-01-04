@@ -12,6 +12,7 @@ sys.setrecursionlimit(2000)             # this is to increase the maximum iterat
 
 # Opening and reading the initialize.txt in buffer mode
 total_course = 0
+counter = 0
 i =0
 url = None;
 time_intervel = None;
@@ -68,9 +69,12 @@ def play_music(music_file, volume=0.8):                               # this is 
 
 def main_function(sc):                                                          # our main function
     print("Our Bot/Script is running")
+    global counter
+    print "Number of Total request sent to IITD Server: ", counter
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
         payload = {'EntryNumber': course}                                       # passing the post parameter to server
         try:
+            counter = counter + 1
             with warnings.catch_warnings():                                         # here I'm suppressing unwanted warnings to avoid unwanted confusion
                 warnings.simplefilter("ignore")
                 r = requests.post(url, data=payload, verify=False)                  # POST with form-encoded data
@@ -98,7 +102,7 @@ def main_function(sc):                                                          
                 volume = 0.8
                 limit = int(hul_dictionary[course])
                 if(student_registered < limit):
-                    print('############# ', course, 'is avaliable to add, Hurry Up') 
+                    print('#############@@@@@@@@@@@@@@@:   ', course, 'is avaliable to add, Hurry Up') 
                     play_music(music_file, volume)
             else:
                 print("Oh Shit!!! Something wrong with your Unique URL or network connection")

@@ -7,6 +7,8 @@ import pygame as pg                     # not a part of the python lib need to i
 import warnings                         # part of the python lib no need to install explicitely
 import sched                            # part of the python lib no need to install explicitely
 import time                             # part of the python lib no need to install explicitely
+import sys
+sys.setrecursionlimit(2000)             # this is to increase the maximum iteration depth in python module
 
 # Opening and reading the initialize.txt in buffer mode
 total_course = 0

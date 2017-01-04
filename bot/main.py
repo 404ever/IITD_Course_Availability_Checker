@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup           # not a part of the python lib need to i
 import requests                         # not a part of the python lib need to install explicitely  (check your respective OS instructoion to install requests)
 import pygame as pg                     # not a part of the python lib need to install explicitely  (check your respective OS instructoion to install pygame)
 import warnings                         # part of the python lib no need to install explicitely
-import sched                            # part of the python lib no need to install explicitely
 import time                             # part of the python lib no need to install explicitely
 import sys
+
 sys.setrecursionlimit(2000)             # this is to increase the maximum iteration depth in python module
 
 # Opening and reading the initialize.txt in buffer mode
@@ -42,8 +42,6 @@ with open('initialize.txt','r') as init:
             hul_dictionary[key] = value
         i = i+1
 
-s = sched.scheduler(time.time, time.sleep)                            # this is the object for system scheduler
-
 def play_music(music_file, volume=0.8):                               # this is our play music function, it will take file as a input
     '''
     stream music with mixer.music module in a blocking manner
@@ -67,14 +65,14 @@ def play_music(music_file, volume=0.8):                               # this is 
     while pg.mixer.music.get_busy():
         clock.tick(30)                                                          # check if playback has finished
 
-def main_function(sc):                                                          # our main function
+def main_function():                                                          # our main function
     print("Our Bot/Script is running")
     global counter
-    print "Number of Total request sent to IITD Server: ", counter
+    print "Number of Total Checks Completed: ", counter
+    counter = counter + 1
     for course in hul_dictionary:                                               # traverse the dictionary for each key (course code in our case)
         payload = {'EntryNumber': course}                                       # passing the post parameter to server
         try:
-            counter = counter + 1
             with warnings.catch_warnings():                                         # here I'm suppressing unwanted warnings to avoid unwanted confusion
                 warnings.simplefilter("ignore")
                 r = requests.post(url, data=payload, verify=False)                  # POST with form-encoded data
@@ -115,16 +113,14 @@ def main_function(sc):                                                          
             sys.exit(1)
             # URL is bad you should try a different one
         except requests.exceptions.RequestException:
-            print("There is a RequestException exception so you need to re-run your script")
-            print("This is due to our IITD proxy server, the server can handle that much request only for an user for a single socket")
+            print("There is a RequestException so you need to re-run your script")
+            print("This is due to our IITD proxy server, the server can't handle too much request for a single user on a single socket")
             print("So to make a new conncetion/socket you need to re-run the script, Sorry...IITD Server Sucks")
             sys.exit(1)
         except requests.exceptions.HTTPError:
             print("There is a HTTPError exception so you need to re-run your script")
             sys.exit(1)
+    time.sleep(float(time_intervel))
+    main_function()
 
-    s.enter(time_intervel, 1, main_function (sc))                                 # here I added timer in sec, so this script 
-                                                                                  # runs in specified time intervel to check updates in IIT database for course avaliability
-s.enter(time_intervel, 1, main_function (s))                                      # and will start playing GOT ringtone as a notification if a course is avilable to add
-s.run()
-
+main_function()

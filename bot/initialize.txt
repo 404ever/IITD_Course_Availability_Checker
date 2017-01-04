@@ -8,5 +8,5 @@ hul362 32
 hul372 32
 hul256 78
 HUL211 156
-https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=63645c49aaebe663fdbd50219fd7ff3e35358fc6&uname=2013CH10083
+https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=2bb72b7037d61c18f08ef0087382b6e0150b6b4a&uname=2013CH10083
 60

@@ -97,82 +97,26 @@ function printpage()
     <td>
     <table width="100%" height="100%" border="1" bgcolor="#F1FDFF">
     <tr>
-	<td valign="top"><font color = "red">Session Expired</font>
-<center>
-<table border="0" cellpadding=5 cellspacing=0 >
+	<td valign="top"><table border=0><tr><td width=150px align =left>
+<a href="index.php?page=home&secret=a37350912e20673cf624f0b50733b21a8914437f&uname=2013CH10083" style="border: 1px solid #0281C3; color:#ffffff; background-color:#0281C3;font-weight:bold;" id="home_button">&nbsp;&nbsp; Home &nbsp;&nbsp;</a></td>
 
-<tr>
-<td align="left" bgcolor="#7BC8FE" width=600px style="font-size: 14px;">
-<br> 
-<b>
-<center>
-<font size="3pt" color=>
-<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
-Important Instructions
-</div>	
-</font>
-</center>
-</b><br>
-<b><u><font color="#8B0D0D">Login Details</font></u></b>
-	<ul>
-	<li class="style3">
-	  <div align="justify" class="style4">Your Kerberos User ID and Password are required for login.</div>
+<td  width=895 align =right><a href="" style="border: 1px solid #0000FF; background-color:#0281C3; font-weight:bold;  color:#FFFFFF;"> &nbsp;&nbsp;JITENDRA GADHWAL&nbsp;&nbsp; </a></td>
+
+<td width=100 align =right> 
+<a href="logout.php?page=logout&secret=b2e76aa66442a84d84766f300c3270c8aa28c600&uname=2013CH10083" style="border: 1px solid #0281C3; color:#ffffff; background-color:#0281C3;font-weight:bold;">&nbsp;&nbsp;Logout&nbsp;&nbsp;</a></td>
+</tr></table>
+<tr><td>
+<align=left>
+<div padding=50 align =right>
+<div class = "choiceform">
 <br>
-<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
-For faculty (Semester Schedule):<br> 
-http://roombooking.iitd.ac.in/user/view_schedule_faculty <br>
+<table border="0" >
+<form method='post' action=GenerateExcel.php?page=excel&secret=022f59f6f342d3c795794fc424d04b6991a2e49c&uname=2013CH10083><input name='submit' type='submit' id='submit' value='Download Data in CSV File'><input type='hidden' name='EntryNumber' value=hul372><input type='hidden' name='UserID' value=2013CH10083></form><br><strong>List of students registered in (IInd Semester 20162017)</strong><strong><br><br>Course Code : HUL372 </strong><strong> <br><br>Course Description : AGRARIAN INDIA: PAST AND PRESENT</strong><table border='0' cellpadding='0' cellspacing='0' style='background-color:#F8F9D6'><tr height=20px ><td align=center width=100>Serial No.</td><td align=center  width=135>Entry Number</td><td  align=center width=350>Student Name </td><td  align=center width=150 >Course Group</td><td  align=center width=125>Audit/Withdrawal</td><td  align=center width=150>Course Slot</td><td  align=center width=50></td><tr height=20px style='background-color:#FFFFFF'><td  align=center>1</td><td  align=center>2013CE10416</td><td  align=left>VISHAL TYAGI</td><td  align=center>1</td><td  align=center>N</td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>2</td><td  align=center>2013CH10061</td><td  align=left>AASTHA DHIMAN</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>3</td><td  align=center>2013CH70143</td><td  align=left>ADESH SHARMA</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>4</td><td  align=center>2013CH70157</td><td  align=left>DEVESH JAIN</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>5</td><td  align=center>2013CH70174</td><td  align=left>SAKSHI BABEL</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>6</td><td  align=center>2013ME10660</td><td  align=left>DEEPANSHU SINGH</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>7</td><td  align=center>2013ME20764</td><td  align=left>AMAN RATHI</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>8</td><td  align=center>2014CH70192</td><td  align=left>SUMIT KUMAR</td><td  align=center>1</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>9</td><td  align=center>2013CH10109</td><td  align=left>ROHAN GARG</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>10</td><td  align=center>2013CH10129</td><td  align=left>SURBHI SINGLA</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>11</td><td  align=center>2013CH70152</td><td  align=left>ANTESH CHIRAG</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>12</td><td  align=center>2013ME10700</td><td  align=left>PARAS GARG</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>13</td><td  align=center>2013TT10900</td><td  align=left>ANKIT MANDAWAT</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>14</td><td  align=center>2014CH70191</td><td  align=left>SUMIT</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>15</td><td  align=center>2014CS10223</td><td  align=left>HIMANSHU SINGH</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>16</td><td  align=center>2014CS10235</td><td  align=left>MICKLE GILL</td><td  align=center>2</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>17</td><td  align=center>2013CE10353</td><td  align=left>KIRAN SAIEMPU</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>18</td><td  align=center>2013CH10099</td><td  align=left>RAJAT GARG</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>19</td><td  align=center>2013EE10434</td><td  align=left>AKASH BAGHEL</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>20</td><td  align=center>2013EE30552</td><td  align=left>BALRAM JAT</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>21</td><td  align=center>2013ME10713</td><td  align=left>RISHABH MALHOTRA</td><td  align=center>3</td><td  align=center>N</td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>22</td><td  align=center>2013ME20801</td><td  align=left>SHREY BIYANI</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>23</td><td  align=center>2014CE10373</td><td  align=left>SAMEER TRIPATHI</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>24</td><td  align=center>2014EE10477</td><td  align=left>RAHUL JHAJHRIA</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>25</td><td  align=center>2014ME20717</td><td  align=left>ARJIT MAHAJAN</td><td  align=center>3</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>26</td><td  align=center>2013CE10330</td><td  align=left>ANKIT CHAWLA</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>27</td><td  align=center>2013CH10074</td><td  align=left>ANTRIKSH JOHRI</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>28</td><td  align=center>2013TT10952</td><td  align=left>RACHIT KUCHHAL</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>29</td><td  align=center>2014CH10080</td><td  align=left>AKHILESH MEENA</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>30</td><td  align=center>2014EE30529</td><td  align=left>PRAFUL AGRAWAL</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#FFFFFF'><td  align=center>31</td><td  align=center>2014MT10587</td><td  align=left>BANOTHU SRINIKESH NAIK</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr><tr height=20px style='background-color:#F8F9D6'><td  align=center>32</td><td  align=center>2014TT10928</td><td  align=left>ROHIT TRIPATHI</td><td  align=center>4</td><td  align=center></td><td  align=center>J</td></tr></div>
 <br>
-For students (Semester Schedule): <br>
-http://roombooking.iitd.ac.in/user/view_schedule <br>
 <br>
-For faulty and UG Students (Non Graded Units): <br>
-https://ngu.iitd.ac.in<br>
-</div>
-	</li>
-	</ul>
-
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<!--<b><u><font color="#8B0D0D">For any help related to Portal</font></u></b><br>
-<ul type="a">
-<li class="style4">Contact Mr. XXXXXX at XXXX.</li>
-</ul>
-
-<b><u><font color="#8B0D0D">Beautification can be done later on.</font></u></b><br>
-<br />
-<br />
-</p>-->
-</td>
-<td valign="top"  bgcolor="#7BC8FE" width=15px><br></td>
-<td valign="top"  bgcolor="#7BC8FE">
-
-<center>
-<div style="font-size: 16px; background-color:#7BC8FE; color: #8B0D0D; ">
-<strong>Sign In</strong><br /><br />
-
-</center>
-<div align="center">
-<form action = "index.php?page=tryLogin"  method="post" autocomplete="off">
-<table border=1 cellspacing=0 cellpadding=4 bordercolor=#88B7EA width=330px id="tblisagree">
-	<tr align='left'>
-	<td valign='top' width=100 ><strong><font color= "#8B0D0D">User Name : </font></strong><br></td>
-	<td valign='top'><input name='username' type='text'  class='lgText'/ autofocus></td>
-	</tr>
-	<tr align='left'>
-	<td valign='top'><strong><font color= "#8B0D0D">Password :</font></strong> </td>
-	<td valign='top'><input name='password' type='password' class='lgText' /></td>
-	</tr>
-	<tr><td valign='top'></td><td valign='top'><input name='submit-button' type='submit' value = 'Log In' /></td></tr>	
+</form></td></tr>
+</td></tr>
 </table>
-</form>
-</div>	
-</div>
-</td>
-<td valign="top"  bgcolor="#7BC8FE" width=15px></td>
-</tr>
-</table>
-</center>
-
  
  
 	</td></tr></table>

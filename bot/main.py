@@ -102,7 +102,7 @@ def main_function():                                                          # 
                 if(student_registered < limit and student_registered > 5):
                     print('#############@@@@@@@@@@@@@@@:   ', course, 'is avaliable to add, Hurry Up') 
                     play_music(music_file, volume)
-                else:
+                if(student_registered <= 5):
                     print("You need to update your token, token has expired")
                     sys.exit(1) 
             else:

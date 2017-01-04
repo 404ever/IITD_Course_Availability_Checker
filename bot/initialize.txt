@@ -4,5 +4,5 @@ cll786 59
 hul362 32
 hul372 32
 hul256 78
-https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=9664874b7d3011b200123a9025a2de90ba910424&uname=2013CH10083
+https://academics1.iitd.ac.in/Academics/index.php?page=ListCourse&secret=b9007c4141ccc729b2037d3cd002336fa718c2f9&uname=2013CH10083
 60
